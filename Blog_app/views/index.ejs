@@ -1,0 +1,23 @@
+<%- include ("partials/header") %>
+<div id="mega">
+	<h1 id="top">
+		Blogs
+	</h1>	
+</div>
+
+<% blogs.forEach(function(blog){ %>
+	<div class="mainBlogDiv">
+		<h1>
+			<%= blog.title %>
+		</h1>
+		<img class="ui image rounded centered" src="<%= blog.image %>">
+		<h3>
+			<%= blog.body.substring(0,100) %>...
+		</h3>
+		<h3>
+			<%= blog.created.toDateString() %>
+		</h3>
+		<a href="/blogs/<%= blog._id %>" class="ui button blue">Read More</a>
+	</div>
+<% }) %>
+<%- include ("partials/footer") %>

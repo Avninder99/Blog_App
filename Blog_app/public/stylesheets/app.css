@@ -1,0 +1,24 @@
+body {
+	background: orange;
+	text-align: center;
+}
+i.icon {
+	font-size: 25px;
+}
+#one , #mega , .main.container{
+	margin-top: 60px;
+}
+#two ,#four{
+	width:150px
+	
+}
+.three {
+	display:flex;
+	justify-content:space-around;
+}
+.mainBlogDiv {
+	background-color: white;
+	margin: 20px 20%;
+	padding: 30px;
+	border-radius: 10px;
+}
